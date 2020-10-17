@@ -12,6 +12,17 @@
         <member name="F:FrameworkFundamentals.Tests.CustomerTest.customer">
             <summary>Customer object</summary>
         </member>
+        <member name="M:FrameworkFundamentals.Tests.CustomerTest.ToString_ReturnsStringInChosenFormat(System.String)">
+            <summary>Test of the <see cref="M:FrameworkFundamentals.Customer.ToString(System.String,System.IFormatProvider)"/> method</summary>
+            <param name="format">Format to work with</param>
+            <returns>String representation of the <see cref="T:FrameworkFundamentals.Customer"/> class</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Tests.CustomerTest.CustomFormatProvider_Test(System.String)">
+            <summary>
+            Test of the custom IFormatterProvider 
+            </summary>
+            <returns>To string</returns>
+        </member>
         <member name="T:FrameworkFundamentals.Tests.FundamentalsTest">
             <summary>
             Test of the <see cref="T:FrameworkFundamentals.Fundamentals"/> class

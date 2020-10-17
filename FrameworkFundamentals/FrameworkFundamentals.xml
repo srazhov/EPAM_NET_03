@@ -24,6 +24,37 @@
         <member name="P:FrameworkFundamentals.Customer.Revenue">
             <summary>Gets the revenue of a customer</summary>
         </member>
+        <member name="M:FrameworkFundamentals.Customer.ToString">
+            <summary>Converts this class to string</summary>
+            <returns>String interpretation</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Customer.ToString(System.String,System.IFormatProvider)">
+            <summary>
+            Converts this class to string
+            </summary>
+            <param name="format">Available: A, T, N</param>
+            <param name="formatProvider">Format provider to work with</param>
+            <returns>String interpretation</returns>
+        </member>
+        <member name="T:FrameworkFundamentals.MyCustomFormat">
+            <summary>Custom formatter</summary>
+        </member>
+        <member name="M:FrameworkFundamentals.MyCustomFormat.Format(System.String,System.Object,System.IFormatProvider)">
+            <summary>
+            Formats given format to string with special rules
+            </summary>
+            <param name="format">This format</param>
+            <param name="arg">This argument</param>
+            <param name="formatProvider">Format provider</param>
+            <returns></returns>
+        </member>
+        <member name="M:FrameworkFundamentals.MyCustomFormat.GetFormat(System.Type)">
+            <summary>
+            Gets the format
+            </summary>
+            <param name="formatType">Format type</param>
+            <returns>format of this type</returns>
+        </member>
         <member name="T:FrameworkFundamentals.Fundamentals">
             <summary>
             Class that holds realizations of tasks from Framework Fundamentals' 
