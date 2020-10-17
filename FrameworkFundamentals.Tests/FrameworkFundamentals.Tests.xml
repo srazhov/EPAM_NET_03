@@ -1,0 +1,53 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkFundamentals.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkFundamentals.Tests.CustomerTest">
+            <summary>
+            Test of the <see cref="T:FrameworkFundamentals.Customer"/> class
+            </summary>
+        </member>
+        <member name="F:FrameworkFundamentals.Tests.CustomerTest.customer">
+            <summary>Customer object</summary>
+        </member>
+        <member name="T:FrameworkFundamentals.Tests.FundamentalsTest">
+            <summary>
+            Test of the <see cref="T:FrameworkFundamentals.Fundamentals"/> class
+            </summary>
+        </member>
+        <member name="M:FrameworkFundamentals.Tests.FundamentalsTest.MakeProperTitle(System.String,System.String)">
+            <summary>Test of the <see cref="M:FrameworkFundamentals.Fundamentals.MakeProperTitle(System.String,System.String)"/> method</summary>
+            <param name="title">Title to change</param>
+            <param name="exceptions">Exceptions that method will ignore</param>
+            <returns>The proper title</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Tests.FundamentalsTest.AddOrChangeUrlParameter(System.String,System.String)">
+            <summary>Test of the <see cref="M:FrameworkFundamentals.Fundamentals.AddOrChangeUrlParameter(System.String,System.String)"/> method</summary>
+            <param name="url">URL to change</param>
+            <param name="keyValueParameter">Key that changes the main URL</param>
+            <returns>Modified URL</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Tests.FundamentalsTest.UniqueInOrder_RemovesSame(System.Collections.IEnumerable)">
+            <summary>Test of the <see cref="M:FrameworkFundamentals.Fundamentals.UniqueInOrder(System.Collections.IEnumerable)"/> method</summary>
+            <param name="enumerable">Enumerable object</param>
+            <returns>Sequence with unique order</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Tests.FundamentalsTest.ReverseWords_Test_ReturnStr_With_Reversed_Words_Order(System.String)">
+            <summary>
+            Test of the <see cref="M:FrameworkFundamentals.Fundamentals.ReverseWords(System.String)"/> method
+            </summary>
+            <param name="text">Text to reverse</param>
+            <returns>Reversed text</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Tests.FundamentalsTest.GetSumOfTwoNumbers_ReturnSumOfNumbers_InString(System.String,System.String)">
+            <summary>
+            Test of the <see cref="M:FrameworkFundamentals.Fundamentals.GetSumOfTwoNumbers(System.String,System.String)"/> method
+            </summary>
+            <param name="first">First argument</param>
+            <param name="second">Second argument</param>
+            <returns>Merged longs in string type</returns>
+        </member>
+    </members>
+</doc>

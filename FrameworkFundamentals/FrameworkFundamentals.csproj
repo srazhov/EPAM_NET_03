@@ -1,12 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <OutputType>Exe</OutputType>
+    <OutputType>Library</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
-    <DocumentationFile>D:\srazh\Documents\EPAM\NET_03\NET_03\FrameworkFundamentals.xml</DocumentationFile>
+    <DocumentationFile>D:\srazh\Documents\EPAM\NET_03\FrameworkFundamentals\FrameworkFundamentals.xml</DocumentationFile>
   </PropertyGroup>
 
 </Project>

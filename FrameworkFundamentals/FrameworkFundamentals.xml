@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>FrameworkFundamentals</name>
+    </assembly>
+    <members>
+        <member name="T:FrameworkFundamentals.Customer">
+            <summary>Customer class</summary>
+        </member>
+        <member name="M:FrameworkFundamentals.Customer.#ctor(System.String,System.String,System.Decimal)">
+            <summary>
+            Initializes a new instance of the <see cref="T:FrameworkFundamentals.Customer"/> class
+            </summary>
+            <param name="name">Name of the customer</param>
+            <param name="contactPhone">Customer's phone</param>
+            <param name="revenue">Customer's revenue</param>
+        </member>
+        <member name="P:FrameworkFundamentals.Customer.Name">
+            <summary>Gets the name of a customer</summary>
+        </member>
+        <member name="P:FrameworkFundamentals.Customer.ContactPhone">
+            <summary>Gets the contact phone of a customer</summary>
+        </member>
+        <member name="P:FrameworkFundamentals.Customer.Revenue">
+            <summary>Gets the revenue of a customer</summary>
+        </member>
+        <member name="T:FrameworkFundamentals.Fundamentals">
+            <summary>
+            Class that holds realizations of tasks from Framework Fundamentals' 
+            </summary>
+        </member>
+        <member name="M:FrameworkFundamentals.Fundamentals.MakeProperTitle(System.String,System.String)">
+            <summary>
+            Corrects the title considering the exception
+            </summary>
+            <param name="title">Correcting title</param>
+            <param name="exceptions">Exception words</param>
+            <returns>Corrected title</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Fundamentals.AddOrChangeUrlParameter(System.String,System.String)">
+            <summary>
+            Adds or changes the parameter of given URL
+            </summary>
+            <param name="url">URL to change</param>
+            <param name="keyValueParameter">Key to add or change</param>
+            <returns>Modified URL with extra keys</returns>
+            <exception cref="T:System.ArgumentException">URL is not supported</exception>
+        </member>
+        <member name="M:FrameworkFundamentals.Fundamentals.UniqueInOrder(System.Collections.IEnumerable)">
+            <summary>Removes the same sequences in a row</summary>
+            <param name="enumerable">Enumerable object</param>
+            <returns>Unique sequence</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Fundamentals.ReverseWords(System.String)">
+            <summary>Reverses given text with ' ' separator</summary>
+            <param name="text">This text</param>
+            <returns>Reversed text</returns>
+        </member>
+        <member name="M:FrameworkFundamentals.Fundamentals.GetSumOfTwoNumbers(System.String,System.String)">
+            <summary>Parses given strings to long type and calculates the result</summary>
+            <param name="first">First argument</param>
+            <param name="second">Second argument</param>
+            <returns>Merged long in string type</returns>
+        </member>
+    </members>
+</doc>
