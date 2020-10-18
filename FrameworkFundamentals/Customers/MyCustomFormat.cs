@@ -19,14 +19,16 @@ namespace FrameworkFundamentals
         /// <param name="format">This format</param>
         /// <param name="arg">This argument</param>
         /// <param name="formatProvider">Format provider</param>
-        /// <returns></returns>
+        /// <returns>Formatted string</returns>
         public string Format(string format, object arg, IFormatProvider formatProvider)
         {
-            if(arg is decimal @decimal)
+            if (arg is decimal @decimal)
             {
                 // This is totally wrong, it's using just for example
                 if (format == "#,##.00")
+                {
                     return @decimal.ToString(format, new CultureInfo("en-US")).Replace(',', '/');
+                }
             }
 
             return arg.ToString();
@@ -39,7 +41,7 @@ namespace FrameworkFundamentals
         /// <returns>format of this type</returns>
         public object GetFormat(Type formatType)
         {
-            if(formatType == typeof(ICustomFormatter))
+            if (formatType == typeof(ICustomFormatter))
             {
                 return this;
             }

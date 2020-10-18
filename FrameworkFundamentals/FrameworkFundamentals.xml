@@ -46,7 +46,7 @@
             <param name="format">This format</param>
             <param name="arg">This argument</param>
             <param name="formatProvider">Format provider</param>
-            <returns></returns>
+            <returns>Formatted string</returns>
         </member>
         <member name="M:FrameworkFundamentals.MyCustomFormat.GetFormat(System.Type)">
             <summary>

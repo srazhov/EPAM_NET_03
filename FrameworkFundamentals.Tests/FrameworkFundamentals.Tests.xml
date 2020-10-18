@@ -17,7 +17,7 @@
             <param name="format">Format to work with</param>
             <returns>String representation of the <see cref="T:FrameworkFundamentals.Customer"/> class</returns>
         </member>
-        <member name="M:FrameworkFundamentals.Tests.CustomerTest.CustomFormatProvider_Test(System.String)">
+        <member name="M:FrameworkFundamentals.Tests.CustomerTest.CustomFormatProvider_Test">
             <summary>
             Test of the custom IFormatterProvider 
             </summary>

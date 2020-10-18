@@ -25,13 +25,13 @@ namespace FrameworkFundamentals.Tests
         [TestCase("A", ExpectedResult = "Customer record: Jeffrey Richter, 1,000,000.00, +1 (425) 555-0100")]
         [TestCase("T", ExpectedResult = "Customer record: +1 (425) 555-0100")]
         [TestCase("N", ExpectedResult = "Customer record: Jeffrey Richter")]
-        public string ToString_ReturnsStringInChosenFormat(string format) => customer.ToString(format, new CultureInfo("en-US"));
+        public string ToString_ReturnsStringInChosenFormat(string format) => this.customer.ToString(format, new CultureInfo("en-US"));
 
         /// <summary>
         /// Test of the custom IFormatterProvider 
         /// </summary>
         /// <returns>To string</returns>
-        [TestCase("A", ExpectedResult = "Customer record: Jeffrey Richter, 1/000/000.00, +1 (425) 555-0100")]
-        public string CustomFormatProvider_Test(string arg) => customer.ToString(arg, new MyCustomFormat());
+        [TestCase(ExpectedResult = "Customer record: Jeffrey Richter, 1/000/000.00, +1 (425) 555-0100")]
+        public string CustomFormatProvider_Test() => this.customer.ToString("A", new MyCustomFormat());
     }
 }
