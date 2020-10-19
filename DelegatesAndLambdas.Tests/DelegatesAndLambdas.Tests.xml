@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelegatesAndLambdas.Tests</name>
+    </assembly>
+    <members>
+        <member name="T:DelegatesAndLambdas.Tests.BubblySortingTest">
+            <summary>
+            Test of the <see cref="T:DelegatesAndLambdas.BubblySorting"/> class
+            </summary>
+        </member>
+        <member name="M:DelegatesAndLambdas.Tests.BubblySortingTest.BubbleSortTest_BySumOfArrays_GetsCustomComparer_ReturnsSortedMatrix">
+            <summary>Test of a delegate and an event</summary>
+        </member>
+        <member name="M:DelegatesAndLambdas.Tests.BubblySortingTest.BubbleSortTest_ByHighestValue_ReturnSortedMatrix">
+            <summary>Test of a delegate and an event</summary>
+        </member>
+        <member name="T:DelegatesAndLambdas.Tests.CountdownTest">
+            <summary>Test of the <see cref="T:DelegatesAndLambdas.Countdown"/> class</summary>
+        </member>
+        <member name="M:DelegatesAndLambdas.Tests.CountdownTest.Countdown_TestOutputsStringInConsole">
+            <summary>Test of the <see cref="E:DelegatesAndLambdas.Countdown.WhenCountdownEnds"/> event</summary>
+        </member>
+    </members>
+</doc>

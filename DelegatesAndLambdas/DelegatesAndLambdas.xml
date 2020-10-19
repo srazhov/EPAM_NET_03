@@ -1,0 +1,107 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DelegatesAndLambdas</name>
+    </assembly>
+    <members>
+        <member name="T:DelegatesAndLambdas.BubblySorting">
+            <summary>
+            Bubbly sort an array with custom comparer
+            </summary>
+        </member>
+        <member name="M:DelegatesAndLambdas.BubblySorting.#ctor(DelegatesAndLambdas.BubblySorting.SortingMethodDelegate)">
+            <summary>
+            Initializes a new instance of the <see cref="T:DelegatesAndLambdas.BubblySorting"/> class
+            </summary>
+            <param name="sortingMethod">Sorting method</param>
+        </member>
+        <member name="T:DelegatesAndLambdas.BubblySorting.SortingMethodDelegate">
+            <summary>Provides the way to sort the arrays</summary>
+            <param name="first">First object</param>
+            <param name="second">Second object</param>
+            <returns>An answer to the swapping condition</returns>
+        </member>
+        <member name="E:DelegatesAndLambdas.BubblySorting.SortingMethod">
+            <summary>
+            The way the <see cref="T:DelegatesAndLambdas.BubblySorting"/> should sort the arrays
+            </summary>
+        </member>
+        <member name="M:DelegatesAndLambdas.BubblySorting.BubbleSort(System.Int32[][])">
+            <summary>Sorts an array</summary>
+            <param name="array">Array to sort</param>
+        </member>
+        <member name="T:DelegatesAndLambdas.Countdown">
+            <summary>Simple countdown class</summary>
+        </member>
+        <member name="T:DelegatesAndLambdas.Countdown.EventHandler">
+            <summary>Event handler</summary>
+        </member>
+        <member name="E:DelegatesAndLambdas.Countdown.WhenCountdownEnds">
+            <summary>An event that executes when countdown ends</summary>
+        </member>
+        <member name="M:DelegatesAndLambdas.Countdown.Wait(System.Int32)">
+            <summary>Starts a countdown</summary>
+            <param name="milliseconds">Milliseconds to wait</param>
+        </member>
+        <member name="T:MethodsInDetails.Euclidea">
+            <summary>
+            Class that holds various realizations of Euclidean algorithm 
+            </summary>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.#ctor(System.Int32[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:MethodsInDetails.Euclidea"/> class
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">Numbers' length must not be less than 2</exception>
+            <param name="numbers">Numbers to find GCD</param>
+        </member>
+        <member name="P:MethodsInDetails.Euclidea.Numbers">
+            <summary>
+            Gets numbers to look for
+            </summary>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.EuclideanAlgorithm(System.Int32[])">
+            <summary>
+            Find the GCD from the given numbers
+            by using Euclidean algorithm
+            </summary>
+            <param name="numbers">Numbers to look for</param>
+            <exception cref="T:System.ArgumentOutOfRangeException">Numbers' length must not be less than 2</exception>
+            <returns>The Greatest Common Divisor (GCD)</returns>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.SteinsAlgorithm(System.Int32[])">
+            <summary>
+            Find the GCD from the given numbers
+            by using Steins algorithm
+            </summary>
+            <param name="numbers">Numbers to look for</param>
+            <returns>The Greatest Common Divisor (GCD)</returns>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.EuclideanAlgorithm">
+            <summary>
+            Find the GCD from the given numbers
+            by using Euclidean algorithm
+            </summary>
+            <returns>The Greatest Common Divisor (GCD)</returns>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.SteinsAlgorithm">
+            <summary>
+            Find the GCD from the given numbers
+            by using Steins algorithm
+            </summary>
+            <returns>The Greatest Common Divisor (GCD)</returns>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.GetRequiredTimeForExecutionEuclid">
+            <summary>
+            Finds the amount of time required to execute <see cref="M:MethodsInDetails.Euclidea.EuclideanAlgorithm"/> method
+            </summary>
+            <returns>Time required to execute</returns>
+        </member>
+        <member name="M:MethodsInDetails.Euclidea.GetRequiredTimeForExecutionStein">
+            <summary>
+            Finds the amount of time required to execute <see cref="M:MethodsInDetails.Euclidea.SteinsAlgorithm"/> method
+            </summary>
+            <returns>Time required to execute</returns>
+        </member>
+    </members>
+</doc>
