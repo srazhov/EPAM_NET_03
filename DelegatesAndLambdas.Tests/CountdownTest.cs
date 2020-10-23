@@ -17,7 +17,7 @@ namespace DelegatesAndLambdas.Tests
         {
             Countdown countdown = new Countdown();
             countdown.WhenCountdownEnds += () => System.Console.WriteLine("Test finished successfuly");
-            countdown.Wait(700);
+            countdown.Wait(10);
 
             Assert.Pass();
         }

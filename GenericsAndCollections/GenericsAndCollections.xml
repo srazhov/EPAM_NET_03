@@ -1,0 +1,261 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>GenericsAndCollections</name>
+    </assembly>
+    <members>
+        <member name="T:GenericsAndCollections.Collections.BinarySearchTree`1">
+            <summary>The Binary tree class</summary>
+            <typeparam name="T">Any type that can be compared to each other</typeparam>
+        </member>
+        <member name="F:GenericsAndCollections.Collections.BinarySearchTree`1.comparer">
+            <summary>Comparator that compares values in binary tree</summary>
+        </member>
+        <member name="F:GenericsAndCollections.Collections.BinarySearchTree`1.hasValue">
+            <summary>True, if its value has ever be modified</summary>
+        </member>
+        <member name="F:GenericsAndCollections.Collections.BinarySearchTree`1.left">
+            <summary>Left branch</summary>
+        </member>
+        <member name="F:GenericsAndCollections.Collections.BinarySearchTree`1.right">
+            <summary>Right branch</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.#ctor">
+            <summary>Initializes a new instance of the <see cref="T:GenericsAndCollections.Collections.BinarySearchTree`1"/> class</summary>
+            <exception cref="T:System.ArgumentException"></exception>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.#ctor(System.Collections.Generic.IComparer{`0})">
+            <summary>Initializes a new instance of the <see cref="T:GenericsAndCollections.Collections.BinarySearchTree`1"/> class</summary>
+            <param name="comparer">Custom comparer</param>
+        </member>
+        <member name="P:GenericsAndCollections.Collections.BinarySearchTree`1.Count">
+            <summary>Gets the count of items in this branch</summary>
+        </member>
+        <member name="P:GenericsAndCollections.Collections.BinarySearchTree`1.Value">
+            <summary>Gets the value of this branch</summary>
+        </member>
+        <member name="P:GenericsAndCollections.Collections.BinarySearchTree`1.LeftBranch">
+            <summary>Gets the left branch of this tree</summary>
+        </member>
+        <member name="P:GenericsAndCollections.Collections.BinarySearchTree`1.RightBranch">
+            <summary>Gets the right branch of this tree</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.Insert(`0)">
+            <summary>
+            Inserts the item in the tree
+            </summary>
+            <param name="item">Inserting item</param>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.Search(`0)">
+            <summary>Searches one specified key from this tree</summary>
+            <param name="key">Key value</param>
+            <returns><see cref="T:GenericsAndCollections.Collections.BinarySearchTree`1"/> object if found. Otherwise, null</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.Clear">
+            <summary>Clears this binary tree.</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.Direct">
+            <summary>Gets the <see cref="T:System.Collections.Generic.IEnumerable`1"/> that sorted the Preorder way</summary>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/> object</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.Transverse">
+            <summary>Gets the <see cref="T:System.Collections.Generic.IEnumerable`1"/> that sorted the Inorder way</summary>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/> object</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.Reverse">
+            <summary>Gets the <see cref="T:System.Collections.Generic.IEnumerable`1"/> that sorted the Postorder way</summary>
+            <returns><see cref="T:System.Collections.Generic.IEnumerable`1"/> object</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.ToString">
+            <summary>String representation of this object</summary>
+            <returns>To string</returns>
+        </member>
+        <member name="T:GenericsAndCollections.Collections.Queue`1">
+            <summary>
+            Custom generic Queue class
+            </summary>
+            <typeparam name="T">Type of the queue instance</typeparam>
+        </member>
+        <member name="F:GenericsAndCollections.Collections.Queue`1.array">
+            <summary>Holder of this queue members</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GenericsAndCollections.Collections.Queue`1"/> class
+            </summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.#ctor(`0[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:GenericsAndCollections.Collections.Queue`1"/> class
+            </summary>
+            <param name="arr">Fill the queue with an array</param>
+        </member>
+        <member name="P:GenericsAndCollections.Collections.Queue`1.Count">
+            <summary>Gets the count of queue members</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.Dequeue">
+            <summary>
+            Gets the first member of this queue and delets it
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">There is no members in this queue</exception>
+            <returns>First member in this queue</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.Enqueue(`0)">
+            <summary>
+            Puts this item to the eng
+            </summary>
+            <param name="item">A new item</param>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.Peek">
+            <summary>
+            Gets the first member of this queue but not deleting it
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">There is no members in this queue</exception>
+            <returns>First member in this queue</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.TryPeek(`0@)">
+            <summary>
+            Tries to get the first member of this queue. Doesn't delete if it was successful
+            </summary>
+            <param name="output">Result of getting the item</param>
+            <returns>True, if peeking was successful. Otherwise, False</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.TryDequeue(`0@)">
+            <summary>
+            Tries to get the first member of this queue. Deletes if it was successful
+            </summary>
+            <param name="output">Result of getting the item</param>
+            <returns>True, if Dequeue was successful. Otherwise, False</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.Contains(`0)">
+            <summary>Does this queue contain the certain value</summary>
+            <param name="item">Searching item</param>
+            <returns>True, if it contains the item</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.GetEnumerator">
+            <summary>
+            Returns an Enumerator that iterates through a collection
+            </summary>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1"/> object</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Queue`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an Enumerator that iterates through a collection
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator"/> object</returns>
+        </member>
+        <member name="T:GenericsAndCollections.Collections.Stack`1">
+            <summary>
+            Custom generic Stack class
+            </summary>
+            <typeparam name="T">Type of the Stack instance</typeparam>
+        </member>
+        <member name="F:GenericsAndCollections.Collections.Stack`1.array">
+            <summary>Holder of this stack items</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:GenericsAndCollections.Collections.Stack`1"/> class
+            </summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.#ctor(`0[])">
+            <summary>
+            Initializes a new instance of the <see cref="T:GenericsAndCollections.Collections.Stack`1"/> class
+            </summary>
+            <param name="arr">Fill the Stack with an array</param>
+        </member>
+        <member name="P:GenericsAndCollections.Collections.Stack`1.Count">
+            <summary>Gets the count of stack items</summary>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.Push(`0)">
+            <summary>
+            Puts this item to the end
+            </summary>
+            <param name="item">A new item</param>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.Pop">
+            <summary>
+            Gets the last item of this Stack and delets it
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">There is no items in this Stack</exception>
+            <returns>Last item of this stack</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.Peek">
+            <summary>
+            Gets the last item of this stack but not deleting it
+            </summary>
+            <exception cref="T:System.ArgumentOutOfRangeException">There is no items in this Stack</exception>
+            <returns>Last item of this queue</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.TryPop(`0@)">
+            <summary>
+            Tries to get the last item of this stack. Deletes if it was successful
+            </summary>
+            <param name="result">Result of getting the item</param>
+            <returns>True, if Popping was successful. Otherwise, False</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.TryPeek(`0@)">
+            <summary>
+            Tries to get the last item of this stack. Doesn't delete if it was successful
+            </summary>
+            <param name="result">Result of getting the item</param>
+            <returns>True, if peeking was successful. Otherwise, False</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.Contains(`0)">
+            <summary>Does this stack contain the certain value</summary>
+            <param name="item">Searching item</param>
+            <returns>True, if it contains the item</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.GetEnumerator">
+            <summary>
+            Returns an Enumerator that iterates through a collection
+            </summary>
+            <returns>An <see cref="T:System.Collections.Generic.IEnumerator`1"/> object</returns>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.Stack`1.System#Collections#IEnumerable#GetEnumerator">
+            <summary>
+            Returns an Enumerator that iterates through a collection
+            </summary>
+            <returns>An <see cref="T:System.Collections.IEnumerator"/> object</returns>
+        </member>
+        <member name="T:GenericsAndCollections.GenericsCollections">
+            <summary>
+            Static class that holds methods that does not have to be non-static
+            </summary>
+        </member>
+        <member name="M:GenericsAndCollections.GenericsCollections.BinarySearch``1(``0[],``0)">
+            <summary>
+            Gets the index of the first found key from an array
+            </summary>
+            <typeparam name="T">Any type</typeparam>
+            <param name="array">Array to look for</param>
+            <param name="key">Key element</param>
+            <returns>Index of the first found key. Otherwise, -1</returns>
+        </member>
+        <member name="M:GenericsAndCollections.GenericsCollections.FrequencyOfWords(System.String)">
+            <summary></summary>
+            <param name="text"></param>
+            <returns></returns>
+        </member>
+        <member name="M:GenericsAndCollections.GenericsCollections.Fibonacci(System.Int32)">
+            <summary>Iterates the Fibonacci number until the given maximum</summary>
+            <param name="max">Max number</param>
+            <returns>Max Fibonacci number that less or equal than given maximum</returns>
+        </member>
+        <member name="M:GenericsAndCollections.GenericsCollections.ReversePolishNotation(System.String)">
+            <summary>
+            Calculates a reverse polish notation
+            </summary>
+            <param name="polishNotation">Polish notation</param>
+            <exception cref="T:System.ArgumentException"></exception>
+            <returns>The result of the math operation</returns>
+        </member>
+        <member name="M:GenericsAndCollections.GenericsCollections.MathOp(System.Int32,System.Int32,System.String)">
+            <summary>Calculates two operands with given operator</summary>
+            <param name="first">First operand</param>
+            <param name="second">Second operand</param>
+            <param name="op">The operator</param>
+            <returns>The result</returns>
+        </member>
+    </members>
+</doc>
