@@ -13,3 +13,9 @@
 ## Generics and Collections
 -*[Generics and Collections](https://github.com/srazhov/EPAM_NET_03/tree/master/GenericsAndCollections)*  
 -*[Generics and Collections Tests](https://github.com/srazhov/EPAM_NET_03/tree/master/GenericsAndCollections.Tests)*  
+  
+## Introduction to Language Integrated Query (LINQ)  
+-*[Introduction to Language Integrated Query](https://github.com/srazhov/EPAM_NET_03/tree/master/LINQ_Intro)*  
+-*[Introduction to Language Integrated Query Tests](https://github.com/srazhov/EPAM_NET_03/tree/master/LINQ_Intro.Tests)*  
+  
+Хотелось бы в будущем уточнять задания, так как не сразу понятно, как именно нужно было сделать это задание.
