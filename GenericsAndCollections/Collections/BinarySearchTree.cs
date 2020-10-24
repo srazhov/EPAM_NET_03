@@ -11,7 +11,7 @@ namespace GenericsAndCollections.Collections
 
     /// <summary>The Binary tree class</summary>
     /// <typeparam name="T">Any type that can be compared to each other</typeparam>
-    public class BinarySearchTree<T>
+    public class BinarySearchTree<T> : IEnumerable<T>
     {
         /// <summary>Comparator that compares values in binary tree</summary>
         private readonly IComparer<T> comparer;
@@ -184,6 +184,18 @@ namespace GenericsAndCollections.Collections
             }
 
             return new T[0];
+        }
+
+        /// <inheritdoc/>
+        public IEnumerator<T> GetEnumerator()
+        {
+            return Transverse().GetEnumerator();
+        }
+
+        /// <inheritdoc/>
+        System.Collections.IEnumerator System.Collections.IEnumerable.GetEnumerator()
+        {
+            return Transverse().GetEnumerator();
         }
     }
 }

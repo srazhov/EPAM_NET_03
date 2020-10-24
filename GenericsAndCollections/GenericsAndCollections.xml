@@ -70,6 +70,12 @@
             <summary>String representation of this object</summary>
             <returns>To string</returns>
         </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.GetEnumerator">
+            <inheritdoc/>
+        </member>
+        <member name="M:GenericsAndCollections.Collections.BinarySearchTree`1.System#Collections#IEnumerable#GetEnumerator">
+            <inheritdoc/>
+        </member>
         <member name="T:GenericsAndCollections.Collections.Queue`1">
             <summary>
             Custom generic Queue class
