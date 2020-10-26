@@ -19,3 +19,8 @@
 -*[Introduction to Language Integrated Query Tests](https://github.com/srazhov/EPAM_NET_03/tree/master/LINQ_Intro.Tests)*  
   
 Хотелось бы в будущем уточнять задания, так как не сразу понятно, как именно нужно было сделать это задание.
+  
+## Internal device types in .NET Framework
+-*[Windows Debugger](https://github.com/srazhov/EPAM_NET_03/tree/master/WinDebugger)*  
+  
+Отчет сделан в виде обрезанных скриншотов.
