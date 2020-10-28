@@ -24,3 +24,10 @@
 -*[Windows Debugger](https://github.com/srazhov/EPAM_NET_03/tree/master/WinDebugger)*  
   
 Отчет сделан в виде обрезанных скриншотов.
+  
+## IO and Streams  
+-*[IO and Streams](https://github.com/srazhov/EPAM_NET_03/tree/master/IOnStreams)*  
+-*[IO and Streams Test](https://github.com/srazhov/EPAM_NET_03/tree/master/IOnStreams.Tests)*  
+
+Методы, которые используют MemoryStream не прошли тесты, ожидания с результатом не сходятся в 3 байта. Хотя сами файлы являются идентичными.  
+Прошу прощения за это)
