@@ -1,0 +1,68 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IOnStreams</name>
+    </assembly>
+    <members>
+        <member name="T:IOnStreams.StreamsExtension">
+            <summary>Class that works with the files</summary>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.ByByteCopy(System.String,System.String)">
+            <summary>
+            By byte copies file using FileStream as a backing store stream.
+            </summary>
+            <param name="sourcePath">Source file path</param>
+            <param name="destinationPath">Destination file path</param>
+            <exception cref="T:System.IO.FileNotFoundException"></exception>
+            <exception cref="T:System.IO.DirectoryNotFoundException"></exception>
+            <returns>Number of bytes that were copied</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.InMemoryByByteCopy(System.String,System.String)">
+            <summary> By byte copies a file using the <see cref="T:System.IO.MemoryStream"/> class</summary>
+            <param name="sourcePath">Source file's path</param>
+            <param name="destinationPath">New file's path</param>
+            <returns>A count of written bytes</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.ByBlockCopy(System.String,System.String)">
+            <summary>
+            By block copies a file using the <see cref="T:System.IO.FileStream"/> instances
+            </summary>
+            <param name="sourcePath">Source file's path</param>
+            <param name="destinationPath">New file's path</param>
+            <returns>A count of written bytes</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.InMemoryByBlockCopy(System.String,System.String)">
+            <summary> By block copies a file using the <see cref="T:System.IO.MemoryStream"/> class</summary>
+            <param name="sourcePath">Source file's path</param>
+            <param name="destinationPath">New file's path</param>
+            <returns>A count of written bytes</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.BufferedCopy(System.String,System.String)">
+            <summary>
+            Copies the file by using the <see cref="T:System.IO.BufferedStream"/> class
+            </summary>
+            <param name="sourcePath">Source file path</param>
+            <param name="destinationPath">New file's path</param>
+            <returns>A count of written bytes</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.ByLineCopy(System.String,System.String)">
+            <summary>Line by line copies a source file to the new path</summary>
+            <param name="sourcePath">Source Path</param>
+            <param name="destinationPath">Path to writing data into</param>
+            <returns>A count of written lines</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.IsContentEquals(System.String,System.String)">
+            <summary>
+            Compares two given files. Returns false if files don't exist
+            </summary>
+            <param name="sourcePath">First file</param>
+            <param name="destinationPath">Second file</param>
+            <returns>True if equal.</returns>
+        </member>
+        <member name="M:IOnStreams.StreamsExtension.InputValidation(System.String,System.String)">
+            <summary>Validates if given inputs are fine. Throws an exception if they are not</summary>
+            <param name="sourcePath">Source file</param>
+            <param name="destinationPath">New file's path</param>
+        </member>
+    </members>
+</doc>
